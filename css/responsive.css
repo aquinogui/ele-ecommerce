@@ -1,0 +1,148 @@
+@media (max-width: 575.98px) {
+
+    #banner {
+        min-height: 250px;
+    }
+
+    #banner h2 {
+        padding-top: 0px;
+        font-size:31px;
+        max-width:140px;
+    }
+    #banner h2::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 3px;
+        border-radius: 20%;
+        background: #fff;
+        position: relative;
+        top:-35px;
+        left: 0;
+    }
+
+    header .logo img {
+        max-width: 90%;
+
+    }
+
+    .tabs-prod h4 {
+        padding: 5px;
+        text-align: center;
+    }
+
+    #oferta .product-banner button {
+        margin: 30px auto;
+    }
+
+    #oferta .product-banner {
+        float:none;
+        text-align: center;
+    }
+
+
+    .frase p {
+       display: block;
+       font-size: 31px;
+    }
+    .prod button {
+        font-size: 18px !important;
+    }
+
+    #oferta .product-banner h3::before {
+display: none;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .sobre-empresa h2 {
+        text-align: center;
+    }
+    #oferta {
+        background-position: right 25% bottom 45% !important;
+    }
+
+    .prod button {
+        width: 80%;
+        font-size: 22px;
+    }
+
+}
+
+
+@media (max-width: 991.98px) {
+    header .logo {
+        float: none;
+        margin: 0 auto;
+    }
+
+    #newsletter {
+        text-align: center;
+    }
+
+    #newsletter input {
+        max-width: 100% !important;
+        margin-top: 5px !important;
+        padding: 5px !important;
+        padding-left: 15px !important;
+    }
+
+    #newsletter button {
+        margin: 0 auto;
+        margin-top: 10px;
+
+    }
+
+    .tabs-prod h4 {
+        width: 45%;
+    }
+}
+
+
+@media (max-width: 1199.98px) {
+
+    #menu .links li {
+        margin-left: 25px;
+    }
+
+    #menu .perfil-busca input {
+        width: 200px;
+    }
+
+    #newsletter {
+        padding-bottom: 25px;
+    }
+
+    #newsletter input {
+        display: block;
+    }
+   
+}
+
+@media (max-width: 450px) {
+    .sociais img {
+        width:25px;
+    }
+
+    header .logo img {
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .tabs-prod h4 {
+        width: 90%;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+
+    
+}
+

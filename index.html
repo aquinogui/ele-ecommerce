@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>E-commerce Eleve</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--BOOTSTRAP LIBRARY-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
+    <!--slick-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class=" container">
+            <!--menu mobile-->
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#" class="depar">Departamentos</a>
+                <div class="separador"></div>
+                <a href="#">Emagrecer</a>
+                <a href="#">Cabelo</a>
+                <a href="#">Disposição</a>
+                <a href="#">Resistencia</a>
+                <a href="#">Sale</a>
+                <div class="perfil">
+                    <a href="">Meus Pedidos</a>
+                    <a href="">Meu perfil</a>
+                </div>
+            </div>
+            <!--menu mobile-->
+            <div class="hamburger visible-xs visible-sm">
+                <span onclick="openNav()">&#9776;</span>
+            </div>
+
+            <div class="busca-aparecer visible-sm visible-xs">
+                <input type="text" id="search" placeholder="O que voce procura?">
+            </div>
+
+            <div class="logo">
+                <img src="images/logo-eleve.png" alt="">
+            </div>
+
+
+            <div class="btns visible-xs visible-sm">
+                <a href=""><img src="images/lupa2.png" alt="" id=""></a>
+                <a href=""></a><img src="images/carrinho.png" alt=""></a>
+            </div>
+            <!--menu desktop-->
+            <nav id="menu" class="hidden-sm hidden-xs">
+                <ul>
+                    <div class="links">
+                        <li><a href="">Emagrecer</a></li>
+                        <li><a href="">Cabelo</a></li>
+                        <li><a href="">Disposição</a></li>
+                        <li><a href="">Saúde</a></li>
+                        <li class="total-itens"><a href="" Sale>Sales</a></li>
+                    </div>
+                    <div class="perfil-busca">
+                        <nav id="info-perfil">
+                            <ul>
+                                <li>
+                                    <Meus href="">Meus Pedidos</a>
+                                </li>
+                                <li>
+                                    <Meu href="">Meu Perfil</a>
+                                </li>
+                                <li><img href=""><img src="images/shopping-cart.png" alt=""><span class="total-itens">99
+                                        Itens</span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="input-group">
+                            <input type="search" placeholder="O que procura?" id="input-search">
+                            <input type="image" src="images/lupa.png" class="submit" />
+                        </div><!-- /input-group -->
+                    </div>
+                </ul>
+
+
+            </nav>
+        </div>
+    </header>
+    <!--fim header-->
+    <div style="clear:both;"></div>
+
+    <!--banner-->
+    <div id="banner">
+        <div class="container">
+            <h2>Eleve seu Potencial</h2>
+        </div>
+
+        <div class="product-banner text-center">
+            <h3>Body GOLD Shake </h3>
+            <span>a partir de <i>R$ 299,00</i></span>
+            <button><a href="">COMPRAR</a></button>
+        </div>
+    </div>
+
+    <section id="slider-prod">
+        <div class="tabs-prod">
+            <div class="container">
+                <h4 class="col-md-3 col-xs-12">Tecnologia em Nutrição</h4>
+                <h4 class="col-md-3 col-xs-12">Produtos Premium</h4>
+                <h4 class="col-md-3 col-xs-12">Comprometimento com sua saúde</h4>
+                <h4 class="col-md-3 col-xs-12">Resultados comprovados</h4>
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="container">
+                <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                    <li class="col-md-2 col-md-offset1"><a href="#tab1" class="active">Sale</a></li class="col-md-2">
+                    <li class="col-md-2"><a href="#tab2">Emagrecer</a></li class="col-md-2">
+                    <li class="col-md-2"><a href="#tab3">Cabelo</a></li class="col-md-2">
+                    <li class="col-md-2"><a href="#tab4">Saúde</a></li class="col-md-2">
+                    <li class="col-md-2"><a href="#tab5">Resistencia</a></li class="col-md-2">
+                </ul>
+                <section id="first-tab-group" class="tabgroup col-md-12">
+                    <!--tab1-->
+                    <div id="tab1">
+                        <div class="prateleira">
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">CONFIRA</a></button>
+                            </div>
+                            <div class=" prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class=" prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--tab2-->
+                    <div id="tab2">
+                        <div class="prateleira">
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class=" prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--tab3-->
+                    <div id="tab3">
+                        <div class="prateleira">
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class=" prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--tab4-->
+                    <div id="tab4">
+                        <div class="prateleira">
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class=" prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--tab5-->
+                    <div id="tab5">
+                        <div class="prateleira">
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class=" prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                            <div class="prod">
+                                <img src="images/produto.png" alt="">
+                                <h2>Produto Lorem Ipsum Dolor Sit Amet</h2>
+                                <span>RS$ 299,00</span>
+                                <small>Em até 10x de R$ 29,99</small>
+                                <button><a href="">COMPRAR</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+
+            </div>
+    </section>
+    <!--fim banner-->
+    </div>
+    </div>
+    </section>
+
+    <div style="clear:both;"></div>
+
+    <!--sobre-->
+
+    <section id="sobre">
+        <div class="container">
+            <div class="col-md-6">
+                <img src="images/video.png" alt="">
+
+                <div class="sobre-empresa">
+                    <h2>Sobre a Eleve</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                        est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+                        sequi nesciunt. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--oferta-->
+    <section id="oferta">
+        <div class="container">
+            <div class="product-banner text-right">
+                <div class="frase">
+                    <p><i>+</i>vitalidade</p>
+                    <p><i>&</i>saúde</p>
+                </div>
+
+                <h3>Triple Ômega </h3>
+                <span>a partir de <i>R$ 299,00</i></span>
+                <button><a href="">COMPRAR</a></button>
+            </div>
+        </div>
+    </section>
+
+    <!--siga nos-->
+    <section id="instagram">
+        <div class="container">
+            <div class="text-center">
+                <h2>Instagram</h2>
+                <h3>Siga a @EleveNutricao</h3>
+            </div>
+
+            <div class="fotos">
+                <div class="col-md-3 col-sm-6 col-xs-12"><img src="images/1.png" alt=""> </div>
+                <div class="col-md-3 col-sm-6 col-xs-12"><img src="images/2.png" alt=""> </div>
+                <div class="col-md-3 col-sm-6 col-xs-12"><img src="images/3.png" alt=""> </div>
+                <div class="col-md-3 col-sm-6 col-xs-12"><img src="images/4.png" alt=""> </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--newsletter-->
+    <section id="newsletter">
+        <div class="container">
+            <div class="col-md-3 col-xs-12">
+                <h4>Newsletter</h4>
+                <p>Faça parte e receba todas as novidades da Eleve</p>
+            </div>
+            <input type="text" placeholder="Digite seu nome" class="col-md-3 col-xs-12">
+            <input type="text" placeholder="Digite seu e-mail" class="col-md-4 col-xs-12">
+            <button>Cadastrar</button>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="col-md-3 col-xs-6 col-sm-6">
+                <h4>Empresa</h4>
+                <li>Sobre nós</li>
+                <li>Fale Conosco</li>
+                <li>Meus Pedidos</li>
+            </div>
+            <div class="col-md-3">
+                <h4>Informações</h4>
+                <li>Politicas de Entrega</li>
+                <li>Politicas de troca</li>
+                <li>Politicas de privacidade</li>
+                <li>Duvidas Frequentes</li>
+            </div>
+
+            <div class="col-md-3 col-xs-6 col-sm-6">
+                <h4>Atendimento</h4>
+                <strong><a href="tel:+">(11) 9 9999 0000
+                        0800 999 888</a></strong>
+                <a href="mailto:atendimento@eleve.com.br">atendimento@eleve.com.br</a>
+                <p>Atendimento de Seg. à Sexta<br>
+                    das 09:00 às 18:00</p>
+            </div>
+
+
+
+            <div class="col-md-3 col-xs-6">
+                <h4>Siga-Nos</h4>
+                <div class="sociais">
+                    <div class="col-md-3 col-xs-4"><a href=""><img src="images/facebook-icon.png" alt="Facebook"></a>
+                    </div>
+                    <div class="col-md-3 col-xs-4"><a href=""><img src="images/instagram-icon.png" alt="Instagram"></a>
+                    </div>
+                    <div class="col-md-3 col-xs-4"><a href=""><img src="images/twitter-icon.png" alt="Twitter"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div" style="clear:both;"></div>
+
+            <div class="col-md-6 col-xs-6">
+                <h5>Formas de pagamento</h5>
+                <div class="formas">
+                    <img src="images/mastercard.png" alt="Mastercard">
+                    <img src="images/visa.png" alt="Visa" class="col-md-3">
+                    <img src="images/american.png" alt="American Express">
+                    <img src="images/hipercard.png" alt="Hipercard">
+                    <img src="images/elo.png" alt="Elo">
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xs-6">
+                <h5>Segurança</h5>
+                <div class="formas">
+                    <img src="images/ssl.png" alt="Mastercard">
+                    <img src="images/site-blindado.png" alt="Visa">
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!--copy-->
+    <div class="copy">
+        <div class="container">
+            <span>Eleve © 2018 - Todos os direitos reservados | CNPJ: 000 0000 00 0000 0001 000 | Rua Lorem Ipsum, 123 -
+                Bairro - São Paulo/ SP - 00000-000  </span>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script>
+    $('.tabgroup > div').hide();
+    $('.tabgroup > div:first-of-type').show();
+    $('.tabs a').click(function (e) {
+        e.preventDefault();
+        var $this = $(this),
+            tabgroup = '#' + $this.parents('.tabs').data('tabgroup'),
+            others = $this.closest('li').siblings().children('a'),
+            target = $this.attr('href');
+        others.removeClass('active');
+        $this.addClass('active');
+        $(tabgroup).children('div').hide();
+        $(target).show();
+
+    })
+</script>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+<!---
+
+<script type="text/javascript">
+    $(".prateleira").slick({
+        arrows: true,
+        dots: false,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 6
+
+    });
+</script>-->
+
+<script>
+    $(document).on('ready', function () {
+
+        $(".prateleira").slick({
+            dots: false,
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            autoplay: true,
+            autoplaySpeed: 2000,
+
+            pauseOnHover: true,
+
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 360,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+
+
+        });
+    });
+</script>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+
+</html>
